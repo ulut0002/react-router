@@ -1,0 +1,29 @@
+.result-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  gap: 1rem;
+}
+
+.button--container {
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+}
+
+.list--container {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.detail--container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

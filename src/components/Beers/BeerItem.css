@@ -1,0 +1,18 @@
+.list--item {
+  margin-top: 0.5rem;
+}
+
+.list--item--link {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 0.0625rem solid black;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
