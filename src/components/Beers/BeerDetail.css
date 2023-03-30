@@ -1,0 +1,41 @@
+.item--detail {
+  background-color: antiquewhite;
+}
+
+.item--detail--container {
+  background-color: ghostwhite;
+  background-color: rgb(195, 230, 244);
+  padding: 5rem 5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.item--detail--container .item--header {
+  font-size: var(--font-h3);
+  color: var(--color-pink);
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+}
+
+.item--detail--container .item--content {
+  font-size: var(--font-h5);
+  margin-top: 1rem;
+}
+
+.item--detail--container .caption {
+  font-weight: bold;
+}
+
+.item--detail--container .bg-image {
+  opacity: 0.3;
+  position: absolute;
+  right: 0rem;
+  bottom: 1rem;
+  width: 10rem;
+  height: auto;
+}

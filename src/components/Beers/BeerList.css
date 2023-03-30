@@ -2,7 +2,7 @@
   margin-top: 1rem;
   margin-left: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-columns: minmax(min-content, max-content) 1fr;
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   gap: 1rem;
 }
@@ -17,9 +17,18 @@
   grid-row: 2/3;
 }
 
+.list--container .active {
+  color: orangered;
+}
+
 .detail--container {
   grid-column: 2/3;
   grid-row: 2/3;
+
+  /* center the item detail item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {

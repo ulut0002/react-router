@@ -9,10 +9,21 @@
   align-items: center;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  border: 0.0625rem solid black;
   border-radius: 0.25rem;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
+}
+
+.item--beer {
+  background-color: var(--color-yellow);
+  color: var(--color-blue);
+  border: 0.0625rem solid var(--color-yellow);
+}
+
+.item--beer:hover,
+.item--beer:focus {
+  background-color: var(--color-blue-light);
+  color: var(--color-text-light);
 }

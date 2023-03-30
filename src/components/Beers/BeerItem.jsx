@@ -5,7 +5,10 @@ function BeerItem({ beer }) {
   if (!beer) return null;
   return (
     <li className="list--item">
-      <NavLink to={`/beers/${beer.uid}`} className="list--item--link">
+      <NavLink
+        to={`/beers/${beer.uid}`}
+        className="list--item--link item--beer"
+      >
         <span className="material-icons">sports_bar</span> {beer.name}
       </NavLink>
     </li>

@@ -1,4 +1,5 @@
 import "./BeerDetail.css";
+
 import { useParams, useOutletContext } from "react-router-dom";
 
 function BeerDetail() {
@@ -6,15 +7,26 @@ function BeerDetail() {
   const beer = useOutletContext();
 
   if (!beer && id) {
-    //console.log("here");
   }
 
   if (beer) {
+    const { brand, name, style, ibu, alcohol } = beer;
     return (
-      <div>
-        <div>id: {id}</div>
-        <div>name: {beer.name}</div>
-        <div>style: {beer.style}</div>
+      <div className="item--detail--container">
+        <h3 className="item--header">{name}</h3>
+        <p className="item--content">
+          <span className="caption">Brand:</span> {brand}
+        </p>
+        <p className="item--content">
+          <span className="caption">Style:</span> {style}
+        </p>
+        <p className="item--content">
+          <span className="caption">IBU:</span> {ibu}
+        </p>
+        <p className="item--content">
+          <span className="caption">Alcohol:</span> {alcohol}
+        </p>
+        <img src="../../../public/beer.png" className="bg-image"></img>
       </div>
     );
   } else {

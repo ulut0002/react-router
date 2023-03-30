@@ -110,11 +110,15 @@ select {
   --font--header: 3.052rem;
 
   /* colors */
-  --color-yellow: #fcdc4d;
+  --color-yellow: hsl(49, 97%, 65%);
+  --color-yellow-light: hsl(49, 97%, 75%);
+  --color-yellow-lighter: hsl(49, 97%, 85%);
   --color-blue: hsl(201, 98%, 20%);
   --color-blue-light: hsl(201, 98%, 40%);
   --color-blue-lightest: hsl(201, 98%, 60%);
   --color-blue-dark: hsl(201, 98%, 10%);
+
+  --color-pink: rgb(241, 53, 85);
 
   --color-text-dark: #321325;
   --color-text-light: #f1faee;

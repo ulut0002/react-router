@@ -1,0 +1,6 @@
+.fetch--error {
+  color: red;
+  font-size: var(--font-h2);
+  text-align: center;
+  margin-top: 4rem;
+}
