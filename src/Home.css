@@ -1,4 +1,5 @@
 .container {
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,9 +7,14 @@
 }
 
 .welcome--header {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
   font-size: var(--font-h1);
+  color: var(--color-yellow);
 }
 
 .welcome--message {
+  margin-top: 2rem;
   font-size: var(--font-h4);
+  color: var(--color-yellow-lighter);
 }

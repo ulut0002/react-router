@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;700;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -37,8 +39,9 @@ html:focus-within {
 
 html {
   line-height: 1.5;
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Lexend, Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 /* Set core body defaults */
@@ -108,6 +111,7 @@ select {
   --font-h5: 1.125rem;
   --font-small: 0.889rem;
   --font--header: 3.052rem;
+  --letter-spacing: 0.1rem;
 
   /* colors */
   --color-yellow: hsl(49, 97%, 65%);
@@ -118,10 +122,92 @@ select {
   --color-blue-lightest: hsl(201, 98%, 60%);
   --color-blue-dark: hsl(201, 98%, 10%);
 
+  --color--dark: #1f0d17;
+
   --color-pink: rgb(241, 53, 85);
+  --color-pink-light: rgb(246, 169, 180);
+
+  --color-selected-link: rgb(211, 84, 135);
 
   --color-text-dark: #321325;
   --color-text-light: #f1faee;
+
+  --color--purple: #7a4567;
+  --color-dark-bg: #321325;
+  --color-light-bg: #a1788f;
+}
+
+body {
+  background-color: var(--color-light-bg);
+}
+
+.button {
+  display: block;
+  padding: 0.5rem 2rem;
+  background-color: var(--color-blue);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border: 0.0625rem solid var(--color-blue);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  font-size: var(--font-h5);
+  font-weight: 500;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-blue-lightest);
+  color: var(--color-text-dark);
+}
+
+.refresh {
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: var(--color-blue-light);
+}
+
+/* beer/bank list styling */
+.result-container {
+  margin: 1rem 0rem;
+  padding: 0rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+  gap: 1rem;
+}
+
+.button--container {
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+}
+
+.list--container {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.list--container .active {
+  color: var(--color-selected-link);
+}
+
+.list--container .active .list--item--description {
+  text-decoration: underline;
+}
+
+.detail--container {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  /* center the item detail item */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 45em) {
@@ -133,6 +219,35 @@ select {
     --font-h5: 1.2rem;
     --font-small: 0.883rem;
     --font--header: 4.029rem;
+    --letter-spacing: 0.2rem;
+  }
+
+  .result-container {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) 1fr;
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(80rem, 100%);
+  }
+
+  .button--container {
+    grid-column: 1 / 2;
+    grid-row: 1/ 2;
+  }
+
+  .list--container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .detail--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 
@@ -145,5 +260,6 @@ select {
     --font-h5: 1.25rem;
     --font-small: 0.8rem;
     --font--header: 5.653rem;
+    --letter-spacing: 0.25rem;
   }
 }

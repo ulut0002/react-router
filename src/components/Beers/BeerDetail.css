@@ -13,12 +13,13 @@
   -o-border-radius: 1rem;
   overflow: hidden;
   position: relative;
+  min-width: min(40rem, 100%);
 }
 
 .item--detail--container .item--header {
   font-size: var(--font-h3);
   color: var(--color-pink);
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.0625rem;
   font-weight: bold;
 }
 

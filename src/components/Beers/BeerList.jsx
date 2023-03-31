@@ -1,8 +1,8 @@
 import BeerItem from "./BeerItem";
-import "./BeerList.css";
 import { useState, useEffect } from "react";
 import { Outlet, useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import NotFound from "../404/NotFound";
 
 function BeerList({ url, beerState }) {
   const { id } = useParams();
@@ -30,9 +30,7 @@ function BeerList({ url, beerState }) {
     return <Loader isLoading={true}></Loader>;
   } else if (isError) {
     return (
-      <div className="fetch--error">
-        Failed to fetch beer list. Try again later
-      </div>
+      <NotFound message="Failed to fetch beer list. Try again later"></NotFound>
     );
   } else {
     let beerMatch = null;
@@ -41,11 +39,12 @@ function BeerList({ url, beerState }) {
       <div className="result-container">
         <div className="button--container">
           <button
+            className="button refresh"
             onClick={() => {
               loadBeerList();
             }}
           >
-            Refresh
+            Refresh Beer List
           </button>
         </div>
         <ul className="list--container">

@@ -1,6 +1,6 @@
 header {
-  background-color: var(--color-yellow);
-  color: var(--color-text-dark);
+  color: var(--color-yellow);
+  background-color: var(--color-dark-bg);
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;

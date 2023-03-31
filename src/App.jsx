@@ -13,6 +13,7 @@ import BankItem from "./components/Banks/BankItem";
 import NotFound from "./components/404/NotFound";
 import BeerDetail from "./components/Beers/BeerDetail";
 import Header from "./components/Header/Header";
+import BankDetail from "./components/Banks/BankDetail";
 
 function App() {
   setConfiguration({ maxScreenClass: "xl" });
@@ -20,8 +21,8 @@ function App() {
   const [beerState, setBeerState] = useState([]);
   const [bankState, setBankState] = useState([]);
 
-  const urlBeer = "https://random-data-api.com/api/v2/beers?size=10";
-  const urlBank = "https://random-data-api.com/api/v2/banks?size=10";
+  const urlBeer = "https://random-data-api.com/api/v2/beers?size=20";
+  const urlBank = "https://random-data-api.com/api/v2/banks?size=20";
 
   return (
     <div className="app">
@@ -43,7 +44,7 @@ function App() {
             <BankList url={urlBank} bankState={[bankState, setBankState]} />
           }
         >
-          <Route path=":id" element={<BankItem />}></Route>
+          <Route path=":id" element={<BankDetail />}></Route>
         </Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>

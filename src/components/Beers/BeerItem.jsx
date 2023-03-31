@@ -9,7 +9,8 @@ function BeerItem({ beer }) {
         to={`/beers/${beer.uid}`}
         className="list--item--link item--beer"
       >
-        <span className="material-icons">sports_bar</span> {beer.name}
+        <span className="material-icons">sports_bar</span>
+        <span className="list--item--description">{beer.name}</span>
       </NavLink>
     </li>
   );

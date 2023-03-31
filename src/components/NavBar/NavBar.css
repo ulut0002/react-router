@@ -1,37 +1,31 @@
 nav {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  background-color: var(--color-yellow-lighter);
+}
+
+.nav--container {
+  margin: 0 auto;
+  padding: 0;
+  padding: 1rem 0.25rem;
   display: flex;
-  gap: 2rem;
-}
-
-nav a {
-  display: block;
-  padding: 0.5rem 2rem;
-  background-color: var(--color-blue);
-  color: var(--color-text-light);
-  text-decoration: none;
-  border: 0.0625rem solid var(--color-blue);
-  border-radius: 0.25rem;
-  -webkit-border-radius: 0.25rem;
-  -moz-border-radius: 0.25rem;
-  -ms-border-radius: 0.25rem;
-  -o-border-radius: 0.25rem;
-  font-size: var(--font-h5);
-  font-weight: 500;
-}
-
-nav a:hover,
-nav a:focus {
-  background-color: var(--color-blue-lightest);
-  color: var(--color-text-dark);
+  justify-content: center;
+  gap: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 nav .active {
-  color: orange;
-
-  /* font-weight: bold; */
+  color: var(--color-pink-light);
 }
 
-.menu {
+@media only screen and (min-width: 45em) {
+  .nav--container {
+    justify-content: start;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(80rem, 100%);
+  }
+}
+
+@media only screen and (min-width: 60em) {
 }

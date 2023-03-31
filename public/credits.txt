@@ -1,2 +1,5 @@
 beer: https://www.flaticon.com/free-icon/beer_894464?term=beer&page=1&position=7&origin=search&related_id=894464
 
+
+
+bank: https://www.flaticon.com/free-icon/money-bag_9621087?term=wealth&page=1&position=25&origin=search&related_id=9621087

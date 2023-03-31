@@ -4,9 +4,17 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <nav>
-      <NavLink to="../">Home</NavLink>
-      <NavLink to="../../beers/">Beers</NavLink>
-      <NavLink to="../../banks/">Banks</NavLink>
+      <div className="nav--container">
+        <NavLink to="../" className="button">
+          Home
+        </NavLink>
+        <NavLink to="../../beers/" className="button">
+          Beers
+        </NavLink>
+        <NavLink to="../../banks/" className="button">
+          Banks
+        </NavLink>
+      </div>
     </nav>
   );
 }

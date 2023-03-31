@@ -26,7 +26,7 @@ function BeerDetail() {
         <p className="item--content">
           <span className="caption">Alcohol:</span> {alcohol}
         </p>
-        <img src="../../../public/beer.png" className="bg-image"></img>
+        <img src="../beer.png" className="bg-image"></img>
       </div>
     );
   } else {
