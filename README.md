@@ -1,6 +1,6 @@
 # React Router Project
 
-This repository contains a simple project demonstrating the use of React Router for navigation in a React application.
+This is a school assignment leveraging ViteJS and React Router functions with data-fetching.
 
 ## Table of Contents
 
@@ -10,10 +10,6 @@ This repository contains a simple project demonstrating the use of React Router 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Introduction
-
-This is a school assignment leveraging ViteJS and React Router functions with data-fetching.
 
 ## Features
 
@@ -32,12 +28,12 @@ This is a school assignment leveraging ViteJS and React Router functions with da
 2. Navigate to the project directory:
 
    ```sh
-        cd react-router
+   cd react-router
    ```
 
 3. Install the dependencies:
    ```sh
-        npm install
+   npm install
    ```
 
 ## Usage
@@ -45,7 +41,7 @@ This is a school assignment leveraging ViteJS and React Router functions with da
 1. Start the development server:
 
    ```sh
-        npm run dev
+   npm run dev
    ```
 
 2. Open your browser and navigate to http://localhost:5173/ to see the application in action.
